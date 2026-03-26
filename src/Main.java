@@ -6,7 +6,7 @@ public class Main {
         short b = -333;
         int c = 5667777;
         long d = 2345678910111213L;
-        System.out.println("Значение переменной a = " + a + " Значение переменной b = " + b + " Значение переменной c = " + c + " Значение переменной d = " + d);
+        System.out.println("Значение переменной 'a' с типом byte = " + a + " Значение переменной 'b' с типом short = " + b + " Значение переменной 'c' с типом int = " + c + " Значение переменной 'd' с типом long = " + d);
 
         float box = 27.12F;
         long pen = 987678965549L;
@@ -37,15 +37,24 @@ public class Main {
         short sheetEA = (short) (sheet * EA);
         System.out.println(sheetEA + " листов бумаги заберет Екатерина Андреевна для своих учеников");
 
-        int machinePerformance = 8;
-        System.out.println("Производительность машины " + machinePerformance + " бутылок в минуту");
-        int machinePerformance20 = machinePerformance*20;
+        int machinePerformance2 = 16;
+        System.out.println(machinePerformance2 + " бутылок машина производит за 2 минуты");
+        int machinePerformance = machinePerformance2/2;
+        System.out.println(machinePerformance + " бутылок машина производит за 1 минуту");
+        int time1 = 20;
+        int machinePerformance20 = machinePerformance*time1;
         System.out.println("За 20 минут машина произвела " + machinePerformance20 + " штук бутылок");
-        int machinePerformance1440 = machinePerformance*1440;
+        int time2 = 1440;
+        System.out.println(time2 + " минут в сутках");
+        int machinePerformance1440 = machinePerformance*time2;
         System.out.println("За сутки машина произвела " + machinePerformance1440 + " штук бутылок");
-        int machinePerformance3 = machinePerformance1440 * 3;
+        int time3 = time2*3;
+        System.out.println(time3 + " минут в 3х сутках");
+        int machinePerformance3 = machinePerformance * time3;
         System.out.println("За 3 дня машина произвела " + machinePerformance3 + " штук бутылок");
-        int machinePerformance1 = machinePerformance1440 * 31;
+        int time4 = time2*31;
+        System.out.println(time4 + " минут в месяце");
+        int machinePerformance1 = machinePerformance * time4;
         System.out.println("За 1 месяц машина произвела " + machinePerformance1 + " штук бутылок");
 
         byte cans = 120;
